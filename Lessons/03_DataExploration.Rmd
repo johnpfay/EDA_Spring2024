@@ -1,3 +1,13 @@
+---
+title: "3: Data Exploration"
+author: "Environmental Data Analytics | John Fay and Luana Lima | Developed by Kateri Salk"
+date: "Spring 2024"
+output: pdf_document
+geometry: margin=2.54cm
+editor_options: 
+  chunk_output_type: console
+---
+
 ## Lesson Objectives
 1. Set up a data analysis session in RStudio
 2. Import and explore datasets in R
