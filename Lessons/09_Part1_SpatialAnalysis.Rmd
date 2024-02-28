@@ -74,9 +74,9 @@ Let's read some geospatial data into our coding environment. The file we'll read
 
 ```{r Read in road data}
 #Read a spatial dataset
-GasPlants <- st_read('https://opendata.arcgis.com/datasets/a0722062315143a7980cebb79a204781_4.geojson')
+#GasPlants <- st_read('https://opendata.arcgis.com/datasets/a0722062315143a7980cebb79a204781_4.geojson')
 #Alternative
-#GasPlants <- st_read(here('Data/Spatial/Manufactured_Gas_Plant_Sites.geojson'))
+GasPlants <- st_read(here('Data/Spatial/Manufactured_Gas_Plant_Sites.geojson'))
 
 #Explore
 class(GasPlants)
@@ -84,7 +84,7 @@ names(GasPlants)
 str(GasPlants$geometry)
 
 #View using sf plot
-plot(GasPlants['status'],pch=16)
+plot(GasPlants['STATUS'],pch=16)
 
 #View using ggplot
 ggplot(data=GasPlants) + geom_sf()
