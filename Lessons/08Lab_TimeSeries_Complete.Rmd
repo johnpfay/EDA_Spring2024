@@ -223,7 +223,7 @@ plot(rainfall_stl_adj)
 
 
 #Test - lm
-rain1 <- lm(data=rainfall_df, adjusted ~ Date)
+rain1 <- lm(data=rainfall_df, nonseasonal ~ Date)
 summary(rain1)
 
 #Test - Mann-Kendall
